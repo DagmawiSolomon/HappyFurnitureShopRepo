@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-f3cgrulagt$s7ao%hvcj^#ujok=pi!avk$=uqjch@g63ejxvnw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://happyfurnitureshop.onrender.com/'
+    'http://happyfurnitureshop.com/'
+]
 
 
 # Application definition
