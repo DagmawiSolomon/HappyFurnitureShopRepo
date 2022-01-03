@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "happy-furniture-store",
+  "private_key_id": "f2681fd042581e4c9ddfe6020c06af719b6bf3d5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC6dNYvqXyUzAFH\neb8afXzrI+nCvY0N1WP7pxDw7c9WWsD6QJ9JKjK6S/CCMxdEy2PSftccVP/ZcpHX\nbrB8J0rl7o4RAoUljUGjbKJTkuifK0i7PDKIU1225/Dn+gvqg91yiQbG9TzJF8vm\nxLSQ2DsqAyctUd7JMeK1Mfw47unAOWLtcurnmIk5MDqRL1zBjaUNCPtSrzpXzQTk\nFvItju/Vvmj4kRnd5+cTKGFcU8g1WTu/70EEU1FjvHdZjwWr8kTsyJEQmb1QVh7k\n1gCSYmq6fzgC1Vnrz0rFXZWdUYpuv2lb+SsH4yK3z47WSALhBYSN9Apfw3b1l1j3\nYrc9Cql1AgMBAAECggEAVdeprprU0PqVUi9ihNMmWmmX20ECek52sCrr+Ug7T1IM\nC4sJ6pjjbvK8YW0dNt5+8C/WYGRfwGBndawv05ERggeQ35Lt8up0QEWo/Foj//fh\nDda6mxnqiOWC+4Iaz1bzcqJUfO/2Es0CYpXIXfE3V/HIrSxGqhFuAybmrN2Nv6HB\nJojf5hp9NFWZzCs8cpk2QWb0KvQMX5bvBMYSSPS9/b31wmGMPGXlQUU/8URpSKGZ\nUEru3e4Z48Z6X1XDjRSNUxPCg7wfHuWR4Iu/a/CHUfjAZ+AfVkM3G9JqEu9Jsy/8\nIeYRjML+e1Q5t2Q7xoLgJ1rl/TdjmelTdRfJHuwK5wKBgQD4p4+2QbCWOsLgnuzI\ni4TBRgxCOZ0+rV0ylRkzLjIvMObFt7QuFJ40bG73QFKZOpERn+AyVO2s04+/+sE+\nWgnbaXVbljb/GebXTMgMOkCoQJFvnZvRadNqoVAl/1KA9HarN2+YDo/5DLweokC/\nD/GJMXYkyet8M1QucR4oCmUxzwKBgQC/9ueXvUGobuMh+ckb440EQDzzUdapHCX5\nsBVWPRMOYjsGkyf+3T8lYdRoAUz+FTMULCFXF+sfjU7aRNPFB8tiEiljRgFVSc/Q\nhEAh4ivwXW27Fhj9K9b/oYNm27BFA5Ivv1/bJRm6krcMt3iuQNbniy6Ky6MA6W16\nyxEjD35VewKBgQCplN2WV0avrnOp7blfLIflqHhD0jdDv8iH7te46BChzqAUyCzC\nIJ2k8y7awauThTXa50ZoDTPrYn3vWHzioVWHpmy7gb8QTAH7ZAorDK98EE0f6kWS\nlLHzTwDyaSdDe3ZTXwNkmMnn+J9z5QRzSdRY1LrWbD+F/Ru0cME4XZ6WUQKBgQCq\n9DtzSrw6P+ZOz6BmEdP3wS2Gk49Tsxmurz2RO3rJCHoAdPTdaDNgGyuKI/5pGIAQ\nquxWH5ro0nMytrDRewuJHxt0qVdumPlVfTGP+1eeC9Y5EojWjkA+D5xx8ZudGn0J\nwKihBP1Qxm/2Bz6WEHBSbATa3lcf7MHu5QEx9A5SGQKBgDpDLp8lBSDJi7FIpxvO\nxWNEwvL2jxAMs1in84AbCzDpOsyQnwqs84pzdn9MWEdgum3YhOxSNAFf+JOBXQP2\nLc6q39fh5dn4R6UTB00ViW06wI6vsxbIZwg7rpbB9sa8ExWPxnbLv4/Lu6R4tIBC\nv2eJTng4Msdp6wVKx8PrvTjH\n-----END PRIVATE KEY-----\n",
+  "client_email": "contacthappyfurnitureshop-gmai@happy-furniture-store.iam.gserviceaccount.com",
+  "client_id": "116462354111071626213",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/contacthappyfurnitureshop-gmai%40happy-furniture-store.iam.gserviceaccount.com"
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Furniture</title>
+    <link rel="apple-touch-icon" sizes="180x180" href=" {% static 'img/favicon/apple-touch-icon.png'%}">
+    <link rel="icon" type="image/png" sizes="32x32" href=" {% static 'img/favicon/favicon-32x32.png'%}">
+    <link rel="icon" type="image/png" sizes="16x16" href=" {% static 'img/favicon/favicon-16x16.png'%}">
+    <link rel="manifest" href="{% static 'img/favicon/site.webmanifest'%}">
+    <link rel="mask-icon" href="{% static 'img/favicon/safari-pinned-tab.svg'%}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="We provide quality and affordable furnitures made with the best materials."/>
+    <!--Custome styling-->
+    <link rel="stylesheet" href="{% static 'style/index.css' %}">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul class="logo-container"> 
+                <img src="{% static 'img/logo.png' %}" alt="company logo">
+            </ul>
+            <ul class="link-container">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#product" class="nav-link">Product</a></li>
+                <li><a href="#aboutus" class="nav-link">About us</a></li>
+                <li><a href="#contuctus" class="nav-link">Contuct Us</a></li>
+            </ul>
+            <ul class="menu">
+                <li class="bar"></li>
+                <li class="bar"></li>
+                <li class="bar"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <h2>Beautiful, Smooth & Elegant</h2>
+            <h1>Happy Furniture</h1>
+            <p>We provide quality and affordable furnitures made with the best materials.</p>
+            <a href="#product" class="btn">View products</a>
+        </section>
+        <section class="product" id="product">
+            <h1 class="section-header">Our Products</h1>
+            <p class="section-description">Lorem ipsum dolor sit ament consectetur adipisicing elit </p>
+            <div class="cards-container">
+                {% for p in products %}
+                <div class="card">
+                    <div class="shape">
+                        <img src="{{p.img.url}}" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>{{p.product_name}}</p>
+                        <span>{{p.product_price}} ETB</span>
+                    </div>
+                </div>
+                {% endfor %}
+        </section>
+        <section class="aboutus" id="aboutus">
+            <h1 class="section-header">About us</h1>
+            <p class="section-description">Lorem ipsum dolor sit ament consectetur adipisicing elit </p>
+            <article class="top">
+                <div class="left">
+                    <img src="{% static 'img/about-1.jpg' %}" alt="">
+                </div>
+                <div class="right">
+                    <h1>Our mission</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tem incidid ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequ. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepte sint occaecat cupidatat non proident, sunt in culpa qui.
+                        elit, sed do eius tem incidid ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitati ullamco laboris nisi ut aliquip ex ea commodo consequ. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepte sint occaecat cupidatat non proident, sunt in culpa qui.
+                    </p>
+                    <a href="#product" class="btn">View products</a>
+                </div>
+            </article>
+            <article class="bottom">
+                <div class="card">
+                    <i class='bx bx-chair'></i>
+                    <h1>Modern and trendy Furniture</h1>
+                    <p>We design modern and trendy furnitures.</p>
+                </div>
+                <div class="card">
+                    <i class='bx bx-dollar-circle' ></i>
+                    <h1>Resonable price</h1>
+                    <p>We design modern and trendy furnitures.</p>
+                </div>
+                <div class="card">
+                    <i class='bx bxs-hourglass-top' ></i>
+                    <h1>Long life</h1>
+                    <p>We design modern and trendy furnitures.</p>
+                </div>
+            </article>
+        </section>
+        <section class="contuctus" id="contuctus">
+            <h1 class="section-header">Contuct us</h1>
+            <p class="section-description">Lorem ipsum dolor sit ament consectetur adipisicing elit </p>
+            <article class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.9644514482507!2d38.743276114800835!3d8.975418293558048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85b2ba74c051%3A0x9a1f3b0ac6c246e1!2sHappy%20Furniture!5e0!3m2!1sen!2set!4v1638894209803!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+            <article class="form">
+                <div class="left">
+                    <h1>Contuct Info</h1>
+                    <div class="phone">
+                        <div>
+                            <h1>Phone</h1>
+                        </div>
+                        <div>
+                            <p>+251 911041167</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div>
+                            <h1>Email</h1>
+                        </div>
+                        <div>
+                            <p>contacthappyfurnitureshop@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="addess">
+                        <div>
+                            <h1>Address</h1>
+                        </div>
+                        <div>
+                            <p>Address goes here.</p>
+                        </div>
+                    </div>
+                    <div class="social-link">
+                        <div>
+                            <h1>Social Accounts</h1>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/happyfurniture67">Facebook</a>
+                            <a href="https://www.instagram.com/happy.furniture/?utm_medium=copy_link">Instagram</a>
+                            <a href="https://t.me/happyfurnitureonlineshop">Telegram</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right">
+                    <h1>Get in touch</h1>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div>
+                            {{form.first_name}}
+                            {{form.phone_number}}
+                        </div>
+                        {{form.email}}
+                        {{form.message}}
+                        <button type="submit" class="btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="logo">
+            <img src="{% static 'img/logo.png' %}" alt="">
+        </section>
+        <section class="copyright">
+            <p><i class='bx bx-copyright'></i>2021 All right reserved <a href="https://www.instagram.com/axiswebdevelopers/">Axis webdevelopers</a></p>
+        </section>
+        <section class="social-link">
+            <ul>
+                <li><a href="https://www.facebook.com/happyfurniture67"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="https://www.instagram.com/happy.furniture/?utm_medium=copy_link"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="https://t.me/happyfurnitureonlineshop"><i class='bx bxl-telegram' ></i></a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+<script src="{% static 'Js/main.js' %}"></script>
+</html>

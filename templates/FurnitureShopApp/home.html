@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture website</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&display=swap" rel="stylesheet">
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <!--swiperjs cdn-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <section class="hero" id="hero">
+        <nav class="navbar" id="navbar">
+            <ul class="logo-container">
+                <a href="" class="nav-logo"><img src="{% static 'img/logo.svg' %}"></a>
+            </ul>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link current">Home</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#aboutus" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="#contuctus" class="nav-link">Contuct</a></li>
+            </ul>
+            <ul class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </ul>
+        </nav>
+        <section class="home">
+            <div class="left">
+                <h2>Beautiful, smooth & Elegant</h2>
+                <h1>Modern Furniture</h1>
+                <p>We provide quality and affordable furnitures made with the best materials.</p>
+                <a href="" class="btn">View products</a>
+            </div>
+            <div class="right">
+                <img src="{% static 'img/sofa.png' %}">
+            </div>
+        </section>
+
+    </section>
+    <section class="products" id="products">
+        <h1 class="section-header">Our Products</h1>
+        <p class="section-text">Take a look at our quality amazing products</p>
+        <div class="swiper-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    {% for product in products %}
+                    <div class="swiper-slide">
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="{{product.img.url}}" alt="">
+                                <h1 class="product-name">{{product.product_name}}</h1>
+                                <p class="product-description">{{product.product_description}}</p>
+                                <p class="price">{{product.product_price}} ETB</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+        <section class="aboutus" id="aboutus">
+        <div class="container">
+            <div class="left-aboutus">
+                <h1>We create quality and affordable furnitures.</h1>
+                <p>We are the best in furniture making. Contuct us today.</p>
+                <a href="#contuctus" class="btn">Contuct Us</a>
+            </div>
+            <div class="right-aboutus">
+                <div class="container">
+                    <div class="card">
+                        <i class='bx bx-chair'></i>
+                        <div>
+                            <h2>Modern and Trendy Furniture</h2>
+                            <p>We design modern and trendy furnitures.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class='bx bx-dollar-circle' ></i>
+                        <div>
+                            <h2>Resonable price</h2>
+                            <p>We design modern and trendy furnitures.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class='bx bx-badge-check' ></i>
+                        <div>
+                            <h2>Quality products</h2>
+                            <p>We design modern and trendy furnitures.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class='bx bxs-hourglass-top' ></i>
+                        <div>
+                            <h2>Long life</h2>
+                            <p>We design modern and trendy furnitures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contuctus" id="contuctus">
+        <h1 class="section-header">Contuct Us</h1>
+        <p class="section-text">Drop us a message</p>
+        <div class="container">
+            <div class="left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7881.9289092748595!2d38.745465!3d8.975418000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a1f3b0ac6c246e1!2sHappy%20Furniture!5e0!3m2!1sen!2set!4v1636679703611!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="right">
+                <form  action = "" method="post" >
+                    {{form.Name}}
+                    <div>
+                        {{form.Email}}
+                        {{form.Phone_number}}
+                    </div>
+                    {{form.message}}
+                    <button type="submit" class="btn sm">Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img src="{% static 'img/logo.svg' %}">
+        <p><i class='bx bx-copyright'></i>2021 All rights reserved<a href="https://www.instagram.com/axiswebdevelopers/">Axis webdevelopers</a></p>
+        <div>
+            <a href="https://www.facebook.com/happyfurniture67"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://instagram.com/happy.furniture?utm_medium=copy_link"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://t.me/happyfurnitureonlineshop"><i class='bx bxl-telegram' ></i></a>
+        </div>
+    </footer>
+</body>
+<script src="{% static 'Js/menu.js' %}"></script>
+<!--swiper js-->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+              }); 
+        } else {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                  
+              });   
+        }
+      }
+      
+      var x = window.matchMedia("(max-width: 768px)")
+      myFunction(x)
+      x.addListener(myFunction) 
+
+</script>
+</html>
