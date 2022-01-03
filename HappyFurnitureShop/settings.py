@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -135,6 +136,7 @@ STATICFILES_DIRS = [
 ]
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media/"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = BASE_DIR / 'happy-furniture-store-f2681fd04258.json/'
 GOOGLE_DRIVE_STORAGE_MEDIA_ROOT = 'https://drive.google.com/drive/folders/1e6n7TyhQMMaGNsYE2W0mgd6sJ83p-pJ9?usp=sharing'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

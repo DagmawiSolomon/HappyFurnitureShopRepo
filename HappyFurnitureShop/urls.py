@@ -20,3 +20,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('FurnitureShop.urls'))
 ]
+#mysite.mysite.FurnitureShop:application
