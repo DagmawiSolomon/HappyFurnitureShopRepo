@@ -1,1 +1,1 @@
-web: gunicorn FurnitureShop.wsgi
+web: gunicorn HappyFurnitureShop.wsgi
